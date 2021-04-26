@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PowerBI - Bits</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/bits.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">BI - Bits</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Home</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fab fa-windows"></i>
+                    <span>Power- BI</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="streamingAPI.html">Streaming API</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800">PowerBI Streaming API</h1>
+
+                     <!-- Page Heading -->
+                     <h2 class="h4 mb-4 text-gray-800">Purpose</h2>
+
+                     <p>This document defines the overall process required to create a Streaming API in PowerBI, that can help
+                         us to create real time visualizations that can provide value to the business.</p>
+
+                    <!-- Page Heading -->
+                    <h2 class="h4 mb-4 text-gray-800">Streaming API</h2>
+                    <p>To create a streaming API we need to access PowerBI web services, you won't be able to continue with this
+                        SOP with the desktop application.</p>
+                    <div class= "align-content-center">
+                        <ol>
+                            <li>
+                                <p>Select the workspace you will use to create the API.</p>
+                                <img src="img/api_1.png" alt="Create API" >
+                            </li>
+                            </br>
+                            <li>
+                                <p>Select on “New” and then in “Streaming dataset”.</p>
+                                <img src="img/api_2.png" alt="Create API" >
+                            </li>
+                            </br>
+                            <li>
+                                <p>On the next screen select “API”.</p>
+                                <img src="img/api_3.png" alt="Create API" >
+                            </li>
+                            </br>
+                            <li>
+                                <p>Create the API, set a name and the values / data type, enable historic data
+                                    analysis (this will enable a internal database to create visualizations in PowerBI).</p>
+                                <img src="img/api_4.png" alt="Create API" >
+                            </li>
+                            </br>
+                            <li>
+                                <p>Once you get to this point you will get the API information, and some lines of code
+                                   that you can use to push data to the API..</p>
+                                <img src="img/api_5.png" alt="Create API" >
+                            </li>
+                        </ol>
+                    </div>
+                    <!-- Page Heading -->
+                    <h2 class="h4 mb-4 text-gray-800">Preparing Visualizations</h2>
+                    <div class= "align-content-center">
+                        <ol>
+                            <li>
+                                <p>Once the API is configured we can start creating our visualizations, on the main workstation page
+                                   go to your dataset and click on the 3 points button, and then select the option “Create report”.</p>
+                                <img src="img/api_6.png" alt="Create API" >
+                            </li>
+                            </br>
+                            <li>
+                                <p>Create the visualization you want to display with the data you have, consider that to this point the
+                                    visualizations are going to be empty. For this example I will only use 2 visualizations: a line chart
+                                    and a table, once you create them send them to a dashboard so we can see how the data flow works.
+                                    Click on the option “Pin visual” and then select the dashboard you want to add the visualization.</p>
+                                <img src="img/api_7.png" alt="Create API" >
+                            </li>
+                            </br>
+                            <li>
+                                <p>Once you are done that the dashboard will be ready to display the data once the script is set.</p>
+                                <img src="img/api_8.png" alt="Create API" >
+                            </li>
+                            </br>
+                        </ol>
+                    </div>
+                    <!-- Page Heading -->
+                    <h2 class="h4 mb-4 text-gray-800">Creating the script</h2>
+                    <div class= "align-content-center">
+                        <ol>
+                            <li>
+                                <p>Now we can implement the script to push data from the source (sensor, dataset, ETL, etc) to the API, for this
+                                    example I will use PowerShell and random values to push to the API.
+                                    You can take the API data from PowerBI and implement it to your code, in my example I create a cycle that
+                                    will run for 2 minutes and send data every 5 seconds.
+                                </p>
+                                <pre class ="code-style">
+                                    <code >
+                                        $endpoint = "https://api.powerbi.com/beta/" --Place the URL THAT PowerBI Provide
+                                        $timeout = new-timespan -Minutes 2
+                                        $sw = [diagnostics.stopwatch]::StartNew()
+                                        while ($sw.elapsed -lt $timeout){
+                                            $payload = @{
+                                                "Value" = Get-Random -Maximum 100
+                                                "date" = Get-Date -Format "dddd MM/dd/yyyy HH:mm:ss K"
+                                            }
+                                            write-host $payload.Values
+                                            Invoke-RestMethod -Method Post -Uri "$endpoint" -Body (ConvertTo-Json @($payload))
+                                            start-sleep -seconds 5
+                                        }
+                                        write-host "Timed out"
+                                    </code>
+                                </pre>
+                            </li>
+                            </br>
+                            <li>
+                                <p>Create the visualization you want to display with the data you have, consider that to this point the
+                                    visualizations are going to be empty. For this example I will only use 2 visualizations: a line chart
+                                    and a table, once you create them send them to a dashboard so we can see how the data flow works.
+                                    Click on the option “Pin visual” and then select the dashboard you want to add the visualization.</p>
+                                <img src="img/api_7.png" alt="Create API" >
+                            </li>
+                            </br>
+                            <li>
+                                <p>Once you are done that the dashboard will be ready to display the data once the script is set.</p>
+                                <img src="img/api_8.png" alt="Create API" >
+                            </li>
+                            </br>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2020</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>
